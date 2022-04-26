@@ -1,0 +1,49 @@
+.btn-2 {
+    display: block;
+
+    line-height: 60px;
+
+
+    border: 2px solid #fdfdfd;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.btn-2-blue {
+    display: block;
+
+    line-height: 60px;
+
+
+    border: 2px solid #3498db;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.btn-2 span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-2:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3498db;
+    transition: all .35s;
+}
+
+.btn-2:hover {
+    color: #fff;
+}
+
+.btn-2:hover:after {
+    width: 100%;
+}

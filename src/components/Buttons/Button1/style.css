@@ -1,0 +1,55 @@
+/* General button style */
+.btn {
+    border: none;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    margin: 12px 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+
+/* Button 1 */
+.btn-1 {
+    background: #3498db;
+    color: #fff;
+}
+
+.btn-1:hover {
+    background: #2980b9;
+}
+
+
+@keyframes click {
+    0% {
+        margin-bottom: 0px;
+    }
+
+    25% {
+        margin-bottom: 0.5px;
+    }
+
+    50% {
+        margin-bottom: 0.75px;
+    }
+
+    75% {
+        margin-bottom: 0.5px;
+    }
+
+    100% {
+        margin-bottom: 0px;
+    }
+}
+
+.btn-1:active {
+    background: #1d5479;
+    animation: click 0.1s;
+}

@@ -1,0 +1,278 @@
+[
+    {
+        "inputs": [
+            {
+                "type": "address",
+                "name": "_dust",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "previousOwner",
+                "indexed": true,
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "type": "uint256",
+                "name": ""
+            }
+        ],
+        "stateMutability": "view",
+        "name": "boughtTotal"
+    },
+    {
+        "name": "endTime",
+        "type": "function",
+        "outputs": [
+            {
+                "name": "",
+                "internalType": "uint256",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "inputs": []
+    },
+    {
+        "name": "isPaused",
+        "stateMutability": "view",
+        "type": "function",
+        "inputs": [],
+        "outputs": [
+            {
+                "internalType": "bool",
+                "type": "bool",
+                "name": ""
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "name": "owner"
+    },
+    {
+        "outputs": [],
+        "inputs": [],
+        "type": "function",
+        "name": "renounceOwnership",
+        "stateMutability": "nonpayable"
+    },
+    {
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "transferOwnership",
+        "type": "function",
+        "inputs": [
+            {
+                "type": "address",
+                "internalType": "address",
+                "name": "newOwner"
+            }
+        ]
+    },
+    {
+        "name": "unlockTimes",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "view",
+        "inputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "type": "uint256",
+                "name": ""
+            }
+        ],
+        "stateMutability": "view",
+        "name": "userBought"
+    },
+    {
+        "name": "userClaimed",
+        "outputs": [
+            {
+                "type": "uint256",
+                "name": "",
+                "internalType": "uint256"
+            }
+        ],
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "type": "function",
+        "stateMutability": "view"
+    },
+    {
+        "type": "function",
+        "outputs": [],
+        "name": "buyDust",
+        "stateMutability": "payable",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "outputs": [],
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "name": "retrieveDust"
+    },
+    {
+        "stateMutability": "view",
+        "type": "function",
+        "name": "amountToClaim",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "inputs": [
+            {
+                "type": "address",
+                "internalType": "address",
+                "name": "_user"
+            }
+        ]
+    },
+    {
+        "inputs": [],
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "name": "recoverDust",
+        "outputs": []
+    },
+    {
+        "name": "recoverONE",
+        "type": "function",
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "outputs": []
+    },
+    {
+        "name": "changeDustAddress",
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_newDust",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "outputs": [],
+        "name": "editEndTime",
+        "inputs": [
+            {
+                "name": "_time",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable"
+    },
+    {
+        "name": "updateCgAddress",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "inputs": [
+            {
+                "internalType": "address",
+                "type": "address",
+                "name": "_cgAddress"
+            }
+        ],
+        "type": "function"
+    },
+    {
+        "name": "claimStartEnd",
+        "type": "function",
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "index",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_time",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "outputs": []
+    },
+    {
+        "name": "pauseContract",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "inputs": [
+            {
+                "type": "bool",
+                "name": "_pause",
+                "internalType": "bool"
+            }
+        ],
+        "type": "function"
+    }
+]

@@ -1,0 +1,99 @@
+.roadmap {
+    padding: 30px 50px;
+}
+
+.roadmap .point {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    position: relative;
+}
+
+.roadmap .point:first-child .point-index {
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%, 2px) !important;
+}
+
+.roadmap .point:last-child .point-index {
+    top: 0;
+    transform: translate(50%, -2px) !important;
+}
+
+.roadmap .point:not(:last-child) {
+    border-bottom: 2px solid #3498db;
+}
+
+.roadmap .point:nth-child(odd) {
+    align-items: flex-start;
+}
+
+.roadmap .point:nth-child(odd):not(:first-child) {
+    border-left: 2px solid #3498db;
+}
+
+.roadmap .point:nth-child(odd) .point-index {
+    left: 0;
+    transform: translate(-50%, -50%);
+
+}
+
+.roadmap .point:nth-child(even) {
+    align-items: flex-end;
+
+}
+
+.roadmap .point:nth-child(even):not(:last-child) {
+    border-right: 2px solid #3498db;
+}
+
+.roadmap .point:nth-child(even) .point-index {
+    right: 0;
+    transform: translate(50%, -50%);
+
+}
+
+.roadmap .point .point-index {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    background: #709dbb;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.875rem;
+
+}
+
+.roadmap .point .point-label {
+    flex: 1 0 100%;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 1.475rem;
+    font-weight: 700;
+
+}
+
+@media (min-width: 641px) {
+    .roadmap .point .point-label {
+        flex: 1 0 50%;
+        width: 50%;
+    }
+}
+
+.roadmap .point .point-text {
+    flex: 1 0 100%;
+    width: 100%;
+
+}
+
+@media (min-width: 641px) {
+    .roadmap .point .point-text {
+        flex: 1 0 50%;
+        width: 50%;
+    }
+}

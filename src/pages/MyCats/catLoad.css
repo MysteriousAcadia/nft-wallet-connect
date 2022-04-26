@@ -1,0 +1,259 @@
+.out {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    top: 50px;
+    overflow: hidden;
+}
+
+.out:after {
+    content: "";
+    width: 252px;
+    height: 252px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 75px;
+    left: 74px;
+}
+
+.out .catBd {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 10px solid #999;
+    background: #333;
+    box-shadow: inset 0px 0px 0px 15px #333, inset 0px 0px 0px 35px #eee, inset 0px 0px 0px 55px #333, inset 0px 0px 0px 65px #999;
+}
+
+.out .four {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    border-radius: 200px 0px 0 0px;
+    opacity: 1;
+    box-shadow: inset 5px 5px 0px 5px #EB7A77, inset 15px 15px 0px 15px #DDD23B, inset 25px 25px 0px 25px #91B493, inset 37.5px 37.5px 0px 37.5px #33A6B8;
+}
+
+.out .catH,
+.out .catF {
+    overflow: hidden;
+}
+
+.out .catF.four {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    animation: roF 3s infinite linear;
+}
+
+.out .catH.four {
+    animation: roH 3s infinite linear;
+}
+
+.out .four.mask {
+    animation: roMask 3s infinite linear;
+}
+
+.out .ears,
+.out .ears:after {
+    width: 10px;
+    height: 17px;
+    position: absolute;
+    top: 99px;
+    left: 17px;
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(27deg);
+    transform-origin: right bottom;
+    transform: rotate(27deg);
+    border: 10px solid #999;
+    border-bottom: none;
+    border-radius: 10px 20px 0 0;
+    background: #333;
+}
+
+.out .ears:after {
+    content: "";
+    top: -10px;
+    left: 5px;
+    -webkit-transform: rotate(0deg) scaleX(-1);
+    transform: rotate(0deg) scaleX(-1);
+}
+
+.out .catH .ears:before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 20px;
+    top: 7px;
+    left: 17px;
+    background: #999;
+    -webkit-transform: rotate(0deg) scaleX(-1);
+    transform: rotate(0deg) scaleX(-1);
+}
+
+.out .catHalf {
+    background: #333;
+    box-shadow: inset 5px 5px 0px 5px #999, inset 32px 32px 0px 33px #333, inset 37px 37px 0px 38px #999;
+}
+
+.out .catHalf:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    top: 44px;
+    right: 67px;
+    border-radius: 50%;
+}
+
+.out .catHalf.catFoot:after {
+    top: 135px;
+    left: 34px;
+    right: 0px;
+}
+
+.out .catFace {
+    -webkit-transform: rotate(-62deg);
+    transform: rotate(-62deg);
+}
+
+.out .catFoot {
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+}
+
+.out .handFoot {
+    height: 25px;
+    width: 10px;
+    position: absolute;
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    border: 10px solid #999;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    background: #333;
+}
+
+.out .handFoot:after {
+    content: "";
+    height: 25px;
+    width: 10px;
+    position: absolute;
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+    border: 10px solid #999;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+}
+
+.out .handFoot.hands {
+    top: 171px;
+    left: 14px;
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
+}
+
+.out .handFoot.hands:after {
+    top: -10px;
+    right: 0px;
+    -webkit-transform: rotate(-80deg);
+    transform: rotate(-80deg);
+}
+
+.out .handFoot.hands:before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    top: -4px;
+    right: 48px;
+    box-shadow: 21px -13px 0 0 #fff, 23px 9px 0 2px #333, 19px 5px 0 2px #fff;
+}
+
+.out .handFoot.foots {
+    top: 59px;
+    right: 73px;
+    -webkit-transform: rotate(69deg);
+    transform: rotate(69deg);
+}
+
+.out .handFoot.foots:after {
+    top: 0px;
+    right: 35px;
+    background: #333;
+}
+
+.out .handFoot.foots:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    background: #333;
+    border: 10px solid #999;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    width: 12px;
+    height: 45px;
+}
+
+@keyframes roF {
+    0% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    42% {
+        -webkit-transform: rotate(331deg);
+        transform: rotate(331deg);
+    }
+
+    89% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+
+@keyframes roH {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes roMask {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    42% {
+        -webkit-transform: rotate(241deg);
+        transform: rotate(241deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(339deg);
+        transform: rotate(339deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

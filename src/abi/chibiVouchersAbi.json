@@ -1,0 +1,118 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "ChibiCatsAddress",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "voucherId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "tokenId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "discount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "retrieverAddress",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "bytes",
+                        "name": "signature",
+                        "type": "bytes"
+                    }
+                ],
+                "internalType": "struct ChibiVoucher.ChibiCatVoucher",
+                "name": "voucher",
+                "type": "tuple"
+            }
+        ],
+        "name": "getSigner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "voucherId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "tokenId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "discount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "retrieverAddress",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "bytes",
+                        "name": "signature",
+                        "type": "bytes"
+                    }
+                ],
+                "internalType": "struct ChibiVoucher.ChibiCatVoucher",
+                "name": "voucher",
+                "type": "tuple"
+            }
+        ],
+        "name": "retrieveVoucher",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "voucherRetrieved",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
